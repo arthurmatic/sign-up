@@ -1,0 +1,307 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body {
+    background-image: url('./work-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+    font-family: sans-serif;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+header > div {
+    width: 10%;
+    padding: 5px;
+    text-align: center;
+}
+.fa-shield-alt {
+    color: dimgray;
+}
+nav {
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+}
+nav li {
+    padding: 15px;
+    color: snow;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ul {
+    display: flex;
+    font-weight: bold;
+}
+li {
+    list-style: none;
+}
+li:hover {
+    cursor: pointer;
+    color: #F9B634;
+}
+.register:hover {
+    background-color: #F9B634;
+    color: snow;
+}
+.register {
+    border: 1px solid snow;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.formbody {
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    margin-top: 4em;
+    margin-bottom: 4em;
+    border: 2px solid snow;
+    width: 60%;
+}
+h2 {
+    margin-top: 1em;
+    color: snow;
+}
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+}
+.namediv, .selectdiv {
+    width: 70%;
+}
+.namediv section, .selectdiv section {
+    width: 50%;
+}
+#firstName {
+    border-right: 2px solid black;
+}
+#lastName {
+    border-left: 2px solid black;
+}
+.organisation {
+    border-left: 2px solid black;
+}
+.select {
+    border-right: 2px solid black;
+}
+.namediv section input {
+    width: 100%;
+}
+.selectdiv section input {
+    width: 100%;
+}
+select {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    color: gray;
+}
+
+select option{
+    font-size: 18px;
+}
+form > div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+section {
+    display: flex;
+    justify-content: center;
+}
+input, button {
+    padding: 10px;
+    width: 69.5%;
+    border: none;
+}
+button {
+    background-color: #F9B634;
+    color: snow;
+    font-weight: bold;
+}
+.buttondiv section, .passworddiv section, .emaildiv section {
+    width: 69.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.emaildiv section input, .passworddiv section input {
+    width: 100%;
+}
+.buttondiv {
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+/* footer area */
+footer {
+    background-color: dimgray;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin-top: 2em;
+}
+.social-media {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+.icons {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+.footer-nav {
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+}
+.footer-nav li {
+    padding: 15px;
+    color: #F9B634;
+}
+.footer-nav li:hover {
+    color: rgb(36, 36, 87);
+}
+.fab {
+    font-size: 25px;
+    color: #F9B634;
+}
+div.copyright {
+    text-align: center;
+    font-size: 1rem;
+    padding: 8px;
+    border-top: 2px solid lightslategray;
+    width: 100%;
+}
+@media screen and (max-width: 400px) {
+    body {
+        box-sizing: border-box;
+    }
+    header, nav, ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 7px;
+        width: auto;
+
+    }
+    nav {
+        width: 95%;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .formbody {
+        width: 95%;
+    }
+    .namediv, .selectdiv {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #firstName, #lastName, .organisation, .select {
+        border: none;
+    }
+    .namediv section, .selectdiv section {
+        width: 100%;
+        margin: 10px;
+    }
+    section {
+        width: 100%;
+    }
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .social-media {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .icons {
+        display: flex;
+        justify-content: space-around;
+        padding: 7px;
+        align-items: center;
+        width: 100%;
+    }
+    .footer-nav {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+@media (min-width: 425px) and (max-width: 600px) {
+    body {
+        box-sizing: border-box;
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    nav li {
+        padding: 5px;
+    }
+    section {
+        width: auto;
+        margin: 0 auto;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .icons {
+        width: 100%;
+        padding-top: 5px;
+    }
+    .social-media {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .footer-nav {
+        width: 100%;
+    }
+    li {
+        padding: 3px;
+    }
+}
